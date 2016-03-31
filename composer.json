@@ -1,7 +1,7 @@
 {
     "name": "cjjian/visitors",
-    "description": "This is a packagist for calculating and recording the article of the visitors.",
-    "type": "php",
+    "description": "log your visitors in db, page hits, and generate visit counter for Laravel 5",
+    "keywords": ["framework", "laravel","visitors", "counter", "log", "hits", "clicks"],
     "license": "MIT",
     "authors": [
         {
@@ -9,6 +9,22 @@
             "email": "changejian@gmail.com"
         }
     ],
-    "minimum-stability": "dev",
-    "require": {}
+    "require": {
+        "php": ">=5.4.0",
+        "illuminate/support": "~5.0",
+        "jalle19/php-whitelist-check": "1.0.4",
+        "geoip2/geoip2": "2.1.1"
+    },
+    "autoload": {
+        "psr-4": {
+            "Weboap\\Visitor\\": "src"
+        }
+    },
+    "config": {
+        "preferred-install": "dist"
+    },
+    "minimum-stability": "stable",
+    "require-dev": {
+        "phpspec/phpspec": "~2.1"
+    }
 }
