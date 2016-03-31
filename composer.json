@@ -1,0 +1,14 @@
+{
+    "name": "cjjian/visitors",
+    "description": "This is a packagist for calculating and recording the article of the visitors.",
+    "type": "php",
+    "license": "MIT",
+    "authors": [
+        {
+            "name": "JiajianChan",
+            "email": "changejian@gmail.com"
+        }
+    ],
+    "minimum-stability": "dev",
+    "require": {}
+}
