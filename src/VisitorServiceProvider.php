@@ -50,15 +50,15 @@ class VisitorServiceProvider extends ServiceProvider {
 			   
 			    
 			    return new Visitor(
-						 $app['Weboap\Visitor\Storage\VisitorInterface'],
-						 $app['Weboap\Visitor\Services\Geo\GeoInterface'],
+						 $app['Cjjian\Visitors\Storage\VisitorInterface'],
+						 $app['Cjjian\Visitors\Services\Geo\GeoInterface'],
 						 $app['ip'],
-						 $app['Weboap\Visitor\Services\Cache\CacheInterface']
+						 $app['Cjjian\Visitors\Services\Cache\CacheInterface']
 						 
 					      );
 			});
 		
-		$this->app->bind('Weboap\Visitor\Visitor', function($app) {
+		$this->app->bind('Cjjian\Visitors\Visitor', function($app) {
 			return $app['visitor'];
 		    });
 	
@@ -72,8 +72,8 @@ class VisitorServiceProvider extends ServiceProvider {
 			    return new Ip(
 					$app->make('request'),
 					array(
-					       $app->make('Weboap\Visitor\Services\Validation\Validator'),
-					       $app->make('Weboap\Visitor\Services\Validation\Checker')
+					       $app->make('Cjjian\Visitors\Services\Validation\Validator'),
+					       $app->make('Cjjian\Visitors\Services\Validation\Checker')
 					       )
 						 
 					      );
@@ -89,7 +89,7 @@ class VisitorServiceProvider extends ServiceProvider {
 		 $this->app->booting(function()
 				{
 				   $loader = \Illuminate\Foundation\AliasLoader::getInstance();
-				   $loader->alias('Visitor', 'Weboap\Visitor\Facades\VisitorFacade');
+				   $loader->alias('Visitor', 'Cjjian\Visitors\Facades\VisitorFacade');
 			
 				    
 				});
@@ -100,18 +100,18 @@ class VisitorServiceProvider extends ServiceProvider {
 	protected function registerBindings()
 	{
 		$this->app->singleton(
-			'Weboap\Visitor\Storage\VisitorInterface',
-			'Weboap\Visitor\Storage\QbVisitorRepository'
+			'Cjjian\Visitors\Storage\VisitorInterface',
+			'Cjjian\Visitors\Storage\QbVisitorRepository'
                 );
 		
 		$this->app->singleton(
-                    'Weboap\Visitor\Services\Geo\GeoInterface',
-                    'Weboap\Visitor\Services\Geo\MaxMind'
+                    'Cjjian\Visitors\Services\Geo\GeoInterface',
+                    'Cjjian\Visitors\Services\Geo\MaxMind'
                 );
 		
 		$this->app->singleton(
-                    'Weboap\Visitor\Services\Cache\CacheInterface',
-                    'Weboap\Visitor\Services\Cache\CacheClass'
+                    'Cjjian\Visitors\Services\Cache\CacheInterface',
+                    'Cjjian\Visitors\Services\Cache\CacheClass'
                 );
 	}
 	
