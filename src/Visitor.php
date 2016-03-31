@@ -1,8 +1,8 @@
-<?php namespace Weboap\Visitor;
+<?php namespace Cjjian\Visitors;
 
-use Weboap\Visitor\Storage\VisitorInterface;
-use Weboap\Visitor\Services\Geo\GeoInterface;
-use Weboap\Visitor\Services\Cache\CacheInterface;
+use Cjjian\Visitors\Storage\VisitorInterface;
+use Cjjian\Visitors\Services\Geo\GeoInterface;
+use Cjjian\Visitors\Services\Cache\CacheInterface;
 
 use Illuminate\Support\Collection;
 use Carbon\Carbon;

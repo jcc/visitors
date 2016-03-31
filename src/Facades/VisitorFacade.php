@@ -1,4 +1,4 @@
-<?php namespace Weboap\Visitor\Facades;
+<?php namespace Cjjian\Visitors\Facades;
 
 use Illuminate\Support\Facades\Facade;
 

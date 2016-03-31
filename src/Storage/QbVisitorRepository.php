@@ -1,4 +1,4 @@
-<?php namespace Weboap\Visitor\Storage;
+<?php namespace Cjjian\Visitors\Storage;
 
 
 use Illuminate\Config\Repository as Config;

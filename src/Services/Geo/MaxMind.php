@@ -1,10 +1,10 @@
-<?php namespace Weboap\Visitor\Services\Geo;
+<?php namespace Cjjian\Visitors\Services\Geo;
 
 use GeoIp2\Database\Reader;
 use GeoIp2\Exception\AddressNotFoundException;
 use Illuminate\Config\Repository as Config;
 use Illuminate\Http\Request as Request;
-use Weboap\Visitor\Ip;
+use Cjjian\Visitors\Ip;
 
 
 class MaxMind implements GeoInterface{

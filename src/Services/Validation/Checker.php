@@ -1,4 +1,4 @@
-<?php namespace Weboap\Visitor\Services\Validation;
+<?php namespace Cjjian\Visitors\Services\Validation;
 
 use Whitelist\Check;
 use  Exception;

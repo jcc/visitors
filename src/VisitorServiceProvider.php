@@ -1,4 +1,4 @@
-<?php namespace Weboap\Visitor;
+<?php namespace Cjjian\Visitors;
 
 
 use Illuminate\Support\ServiceProvider;
