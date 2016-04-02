@@ -9,17 +9,19 @@ Just add to composer.json file:
 ```json
 {
     "require": {
-        "weboap/visitor": "dev-master"
+        "cjjian/visitor": "dev-master"
     }
 }
 ```
 then run
+```
+composer update
+```
 
-php composer.phar update
 #Step 2
 
 Add
-`Weboap\Visitor\VisitorServiceProvider::class`
+`Cjjian\Visitors\VisitorServiceProvider::class`
 to the list of service providers in app/config/app.php
 
 #Step 3
